@@ -19,7 +19,7 @@ export function CTASection() {
               Prêt à transformer votre gestion officinale ?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8">
-              Rejoignez les pharmaciens qui ont déjà optimisé leur quotidien avec PharmaGest. Démo gratuite et sans engagement.
+              Rejoignez les pharmaciens qui ont déjà optimisé leur quotidien avec PilotermaPharma. Démo gratuite et sans engagement.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

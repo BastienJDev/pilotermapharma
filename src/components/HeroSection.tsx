@@ -43,7 +43,7 @@ export function HeroSection() {
           <div className="rounded-2xl overflow-hidden shadow-prominent border border-border/50">
             <img 
               src={dashboardMockup} 
-              alt="Tableau de bord PharmaGest" 
+              alt="Tableau de bord PilotermaPharma" 
               className="w-full h-auto"
             />
           </div>

@@ -9,7 +9,7 @@ export function Footer() {
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-primary">
               <Pill className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold">PharmaGest</span>
+            <span className="text-xl font-bold">PilotermaPharma</span>
           </div>
           
           <nav className="flex items-center gap-8">
@@ -28,7 +28,7 @@ export function Footer() {
           </nav>
           
           <p className="text-background/50 text-sm">
-            © 2026 PharmaGest. Tous droits réservés.
+            © 2026 PilotermaPharma. Tous droits réservés.
           </p>
         </div>
       </div>

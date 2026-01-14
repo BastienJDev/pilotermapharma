@@ -10,7 +10,7 @@ export function Header() {
             <div className="flex items-center justify-center w-10 h-10 rounded-xl gradient-primary">
               <Pill className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">PharmaGest</span>
+            <span className="text-xl font-bold text-foreground">PilotermaPharma</span>
           </div>
           
           <nav className="hidden md:flex items-center gap-8">

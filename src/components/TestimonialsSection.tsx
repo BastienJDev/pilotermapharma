@@ -16,7 +16,7 @@ const testimonials: Testimonial[] = [
     role: "Pharmacienne Titulaire",
     pharmacy: "Pharmacie du Centre",
     location: "Lyon",
-    content: "PharmaGest a transformé ma façon de gérer ma pharmacie. Les tableaux de bord sont clairs et me permettent de prendre des décisions éclairées en quelques minutes. J'ai réduit mes stocks dormants de 40% en 6 mois.",
+    content: "PilotermaPharma a transformé ma façon de gérer ma pharmacie. Les tableaux de bord sont clairs et me permettent de prendre des décisions éclairées en quelques minutes. J'ai réduit mes stocks dormants de 40% en 6 mois.",
     rating: 5,
     avatar: "MD"
   },
@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
     role: "Pharmacienne Titulaire",
     pharmacy: "Pharmacie des Halles",
     location: "Bordeaux",
-    content: "Après avoir testé plusieurs solutions, PharmaGest est de loin la plus intuitive. Mes préparatrices l'ont adoptée en moins d'une semaine. Le gain de temps est considérable.",
+    content: "Après avoir testé plusieurs solutions, PilotermaPharma est de loin la plus intuitive. Mes préparatrices l'ont adoptée en moins d'une semaine. Le gain de temps est considérable.",
     rating: 5,
     avatar: "SL"
   },
@@ -105,7 +105,7 @@ export function TestimonialsSection() {
             <span className="text-gradient">confiance</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez ce que les pharmaciens pensent de PharmaGest et comment 
+            Découvrez ce que les pharmaciens pensent de PilotermaPharma et comment 
             notre solution a transformé leur quotidien.
           </p>
         </div>

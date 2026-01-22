@@ -15,35 +15,35 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 25% 15%;
 
-    --primary: 168 65% 38%;
+    --primary: 152 85% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 165 30% 94%;
-    --secondary-foreground: 168 65% 28%;
+    --secondary: 150 40% 94%;
+    --secondary-foreground: 152 85% 32%;
 
-    --muted: 160 15% 95%;
+    --muted: 150 20% 95%;
     --muted-foreground: 200 15% 45%;
 
-    --accent: 158 55% 92%;
-    --accent-foreground: 168 65% 28%;
+    --accent: 150 60% 92%;
+    --accent-foreground: 152 85% 32%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 165 20% 90%;
-    --input: 165 20% 90%;
-    --ring: 168 65% 38%;
+    --border: 150 25% 90%;
+    --input: 150 25% 90%;
+    --ring: 152 85% 42%;
 
     --radius: 0.75rem;
 
     /* Custom pharmacy colors */
-    --emerald: 160 84% 39%;
-    --emerald-light: 158 64% 95%;
-    --teal-dark: 175 60% 25%;
-    --teal-light: 175 45% 96%;
+    --emerald: 152 90% 45%;
+    --emerald-light: 150 70% 95%;
+    --teal-dark: 160 70% 28%;
+    --teal-light: 155 50% 96%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(168, 65%, 38%) 0%, hsl(160, 84%, 39%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(152, 85%, 42%) 0%, hsl(145, 90%, 38%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(165, 30%, 98%) 0%, hsl(160, 25%, 95%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(165, 20%, 99%) 100%);
     --gradient-glow: radial-gradient(ellipse at center, hsl(168, 65%, 38%, 0.15) 0%, transparent 70%);
@@ -53,7 +53,7 @@
     --shadow-md: 0 4px 6px -1px hsl(200, 25%, 15%, 0.07), 0 2px 4px -2px hsl(200, 25%, 15%, 0.05);
     --shadow-lg: 0 10px 15px -3px hsl(200, 25%, 15%, 0.08), 0 4px 6px -4px hsl(200, 25%, 15%, 0.05);
     --shadow-xl: 0 20px 25px -5px hsl(200, 25%, 15%, 0.1), 0 8px 10px -6px hsl(200, 25%, 15%, 0.05);
-    --shadow-glow: 0 0 40px hsl(168, 65%, 38%, 0.2);
+    --shadow-glow: 0 0 40px hsl(152, 85%, 42%, 0.25);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -75,7 +75,7 @@
     --popover: 200 20% 12%;
     --popover-foreground: 150 20% 98%;
 
-    --primary: 168 65% 45%;
+    --primary: 152 85% 50%;
     --primary-foreground: 200 25% 8%;
 
     --secondary: 200 15% 18%;
@@ -92,7 +92,7 @@
 
     --border: 200 15% 20%;
     --input: 200 15% 20%;
-    --ring: 168 65% 45%;
+    --ring: 152 85% 50%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

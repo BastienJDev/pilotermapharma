@@ -39,7 +39,7 @@ export function BenefitsSection() {
             
             <div className="grid grid-cols-2 gap-8">
               <StatCard value="40" suffix="%" label="Temps gagné sur les bilans" />
-              <StatCard value="25" suffix="%" label="Réduction des ruptures" />
+              <StatCard value="10" suffix="%" label="Diminution du coût salarial" />
               <StatCard value="15" suffix="%" label="Économies réalisées" />
               <StatCard value="4.9" suffix="/5" label="Satisfaction client" />
             </div>

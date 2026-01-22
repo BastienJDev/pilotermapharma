@@ -67,7 +67,7 @@ export function HeroSection() {
                 <span className="text-lg">💊</span>
               </div>
               <div>
-                <p className="text-sm font-semibold text-foreground">Stock OK</p>
+                <p className="text-sm font-semibold text-foreground">Avertissement: trop de stock</p>
                 <p className="text-xs text-muted-foreground">98% disponible</p>
               </div>
             </div>

@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
   "Gain de temps considérable sur les analyses mensuelles",
-  "Réduction des erreurs de gestion de stock",
+  "Gérer le planning de vos employés pour piloter aux mieux votre pharmacie",
   "Meilleure visibilité sur la rentabilité",
   "Décisions basées sur des données fiables",
   "Interface intuitive, aucune formation requise"

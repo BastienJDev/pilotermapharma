@@ -15,7 +15,7 @@ const plans: PricingPlan[] = [
   {
     name: "Essentiel",
     description: "Pour les pharmacies qui débutent leur transformation digitale",
-    price: "89",
+    price: "29,99",
     period: "/mois",
     features: [
       "Tableau de bord principal",
@@ -28,9 +28,9 @@ const plans: PricingPlan[] = [
     buttonText: "Commencer"
   },
   {
-    name: "Pro",
+    name: "Automatisation",
     description: "La solution complète pour optimiser votre officine",
-    price: "179",
+    price: "59,99",
     period: "/mois",
     features: [
       "Tout de Essentiel +",
@@ -46,21 +46,19 @@ const plans: PricingPlan[] = [
     buttonText: "Essai gratuit 14 jours"
   },
   {
-    name: "Entreprise",
-    description: "Pour les groupements et réseaux de pharmacies",
-    price: "Sur devis",
-    period: "",
+    name: "+ Planning",
+    description: "Module complémentaire pour la gestion du personnel",
+    price: "10",
+    period: "/mois",
     features: [
-      "Tout de Pro +",
-      "Multi-pharmacies",
-      "Consolidation groupe",
-      "API & intégrations",
-      "Formation sur site",
-      "Account manager dédié",
-      "Utilisateurs illimités",
-      "SLA garanti"
+      "Planning des employés",
+      "Gestion des congés",
+      "Suivi des heures",
+      "Alertes de planning",
+      "Export planning",
+      "Compatible avec tous les plans"
     ],
-    buttonText: "Nous contacter"
+    buttonText: "Ajouter"
   }
 ];
 

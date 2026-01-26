@@ -53,8 +53,9 @@ export function FeaturesSection() {
             Fonctionnalités
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
-            Tout ce dont vous avez{" "}
-            <span className="text-gradient">besoin</span>
+            Maîtriser votre{" "}
+            <span className="text-gradient">performance globale</span>
+            {" "}de l'officine en un seul outil
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '200ms' }}>
             Une suite complète d'outils pour piloter votre pharmacie efficacement.

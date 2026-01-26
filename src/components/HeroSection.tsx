@@ -20,9 +20,6 @@ export function HeroSection() {
             <span className="text-gradient">clarté totale</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '200ms' }}>
-            Bilans financiers, gestion des stocks, coûts salariaux et matériel — tout synthétisé dans des tableaux de bord intuitifs pour une gestion simplifiée.
-          </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '300ms' }}>
             <Button variant="hero" size="xl">

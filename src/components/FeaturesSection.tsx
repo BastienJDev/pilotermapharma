@@ -17,12 +17,12 @@ const features = [
   {
     icon: Package,
     title: "Gestion des stocks",
-    description: "Optimisez vos commandes grâce à des alertes intelligentes."
+    description: "Optimisez vos commandes grâce à des alertes intelligentes et évitez les ruptures de stock."
   },
   {
     icon: Wallet,
     title: "Coûts & Dépenses",
-    description: "Maîtrisez vos coûts salariaux, matériel et fournisseurs avec une vision détaillée de chaque poste de dépense."
+    description: "Maîtrisez vos coûts salariaux, matériel et fournisseurs avec une vision détaillée de chaque poste."
   },
   {
     icon: TrendingUp,
@@ -37,31 +37,38 @@ const features = [
   {
     icon: Shield,
     title: "Sécurité des données",
-    description: "Vos données sont cryptées et hébergées en France, conformément aux normes de sécurité pharmaceutique."
+    description: "Vos données sont cryptées et hébergées en France, conformément aux normes pharmaceutiques."
   }
 ];
 
 export function FeaturesSection() {
   return (
-    <section id="fonctionnalites" className="py-24 bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Tout ce dont vous avez besoin
+    <section id="fonctionnalites" className="py-32 bg-muted/50 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-b from-primary/5 to-transparent rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center mb-20">
+          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6 animate-fade-up">
+            Fonctionnalités
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
+            Tout ce dont vous avez{" "}
+            <span className="text-gradient">besoin</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une suite complète d'outils pour piloter votre pharmacie efficacement et prendre des décisions éclairées.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '200ms' }}>
+            Une suite complète d'outils pour piloter votre pharmacie efficacement.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <FeatureCard
               key={feature.title}
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
-              delay={index * 100}
+              delay={300 + index * 100}
             />
           ))}
         </div>

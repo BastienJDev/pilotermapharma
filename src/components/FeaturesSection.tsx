@@ -57,9 +57,6 @@ export function FeaturesSection() {
             <span className="text-gradient">officine</span>
             {" "}en un seul outil
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '200ms' }}>
-            La gestion de votre officine enfin centralisée
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

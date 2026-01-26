@@ -1,5 +1,4 @@
-import { ArrowRight, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Sparkles } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -51,16 +50,6 @@ export function HeroSection() {
             Bilans financiers, gestion des stocks, coûts salariaux — tout synthétisé dans des tableaux de bord intuitifs.
           </p>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '300ms' }}>
-            <Button variant="hero" size="xl" className="group">
-              Essayer gratuitement
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              Voir la démo
-            </Button>
-          </div>
           
           {/* Stats row */}
           <div className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '400ms' }}>

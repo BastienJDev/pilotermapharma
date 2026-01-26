@@ -53,7 +53,7 @@ export function FeaturesSection() {
             Fonctionnalités
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
-            Maîtriser votre{" "}
+            Maîtrisez votre{" "}
             <span className="text-gradient">officine</span>
             {" "}en un seul outil
           </h2>

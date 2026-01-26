@@ -41,7 +41,7 @@ export function HeroSection() {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-up" style={{ animationDelay: '200ms' }}>
-            Bilans financiers, gestion des stocks, coûts salariaux — tout synthétisé dans des tableaux de bord intuitifs.
+            Bilans financiers, suivi des stocks, gestion des plannings, coûts salariaux, contrôle des remises — tout synthétisé dans des tableaux de bord intuitifs.
           </p>
           
           

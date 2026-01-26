@@ -54,8 +54,8 @@ export function FeaturesSection() {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
             Maîtriser votre{" "}
-            <span className="text-gradient">performance globale</span>
-            {" "}de l'officine en un seul outil
+            <span className="text-gradient">officine</span>
+            {" "}en un seul outil
           </h2>
         </div>
         

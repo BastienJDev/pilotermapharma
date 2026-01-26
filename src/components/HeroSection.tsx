@@ -19,17 +19,6 @@ export function HeroSection() {
             Solution tout-en-un pour <span className="text-gradient font-extrabold">piloter</span> votre pharmacie
           </h1>
           
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '300ms' }}>
-            <Button variant="hero" size="xl">
-              Essayer gratuitement
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              <Play className="w-5 h-5" />
-              Voir la démo
-            </Button>
-          </div>
         </div>
         
         {/* Dashboard mockup */}

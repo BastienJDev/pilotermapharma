@@ -49,9 +49,6 @@ export function FeaturesSection() {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-20">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6 animate-fade-up">
-            Fonctionnalités
-          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
             Maîtrisez votre{" "}
             <span className="text-gradient">officine</span>

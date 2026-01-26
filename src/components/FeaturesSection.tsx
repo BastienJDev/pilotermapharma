@@ -57,9 +57,6 @@ export function FeaturesSection() {
             <span className="text-gradient">performance globale</span>
             {" "}de l'officine en un seul outil
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '200ms' }}>
-            Une suite complète d'outils pour piloter votre pharmacie efficacement.
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

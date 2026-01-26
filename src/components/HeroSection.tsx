@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+
 
 export function HeroSection() {
   return (
@@ -21,12 +21,6 @@ export function HeroSection() {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass border border-primary/20 text-sm font-medium mb-8 animate-fade-up shadow-soft">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-foreground">Créé par un pharmacien pour les pharmaciens</span>
-          </div>
-          
           {/* Main heading */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-[1.1] animate-fade-up" style={{ animationDelay: '100ms' }}>
             Solution tout-en-un pour{" "}

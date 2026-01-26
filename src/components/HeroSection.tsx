@@ -1,8 +1,8 @@
 export function HeroSection() {
   return (
-    <section className="relative pt-32 md:pt-40 pb-20 overflow-hidden gradient-hero">
+    <section className="relative pt-32 md:pt-40 pb-20 overflow-hidden bg-gradient-to-br from-white via-white to-primary/10">
       {/* Background glow effect */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full opacity-30" style={{ background: 'var(--gradient-glow)' }} />
+      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full opacity-20 bg-gradient-to-br from-primary/30 to-primary/5 blur-3xl" />
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

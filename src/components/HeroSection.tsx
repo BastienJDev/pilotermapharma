@@ -1,8 +1,29 @@
 export function HeroSection() {
   return (
-    <section className="relative pt-32 md:pt-40 pb-20 overflow-hidden bg-gradient-to-br from-white via-primary/20 to-primary/40">
-      {/* Background glow effect */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full opacity-40 bg-gradient-to-br from-primary/50 to-primary/20 blur-3xl" />
+    <section className="relative pt-32 md:pt-40 pb-20 overflow-hidden bg-white">
+      {/* Wave background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <svg
+          className="absolute bottom-0 left-0 w-full h-[70%]"
+          viewBox="0 0 1440 600"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 200C240 100 480 300 720 250C960 200 1200 50 1440 150V600H0V200Z"
+            className="fill-primary/20"
+          />
+          <path
+            d="M0 300C200 200 400 350 700 300C1000 250 1200 150 1440 250V600H0V300Z"
+            className="fill-primary/30"
+          />
+          <path
+            d="M0 400C300 300 500 450 800 380C1100 310 1300 250 1440 350V600H0V400Z"
+            className="fill-primary/40"
+          />
+        </svg>
+      </div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

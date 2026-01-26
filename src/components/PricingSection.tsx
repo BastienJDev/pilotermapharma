@@ -1,4 +1,4 @@
-import { Check, Sparkles, ArrowRight, Play } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface PricingPlan {
@@ -167,18 +167,6 @@ export const PricingSection = () => {
         <p className="text-center text-muted-foreground text-sm mt-12 animate-fade-up" style={{ animationDelay: '600ms' }}>
           Tous les prix sont HT. Facturation mensuelle ou annuelle (-20%).
         </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16 animate-fade-up" style={{ animationDelay: '700ms' }}>
-          <Button variant="hero" size="xl" className="group">
-            Essayer gratuitement
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button variant="heroOutline" size="xl">
-            <Play className="w-5 h-5" />
-            Voir la démo
-          </Button>
-        </div>
       </div>
     </section>
   );

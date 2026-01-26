@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface PricingPlan {
@@ -64,19 +64,21 @@ const plans: PricingPlan[] = [
 
 export const PricingSection = () => {
   return (
-    <section id="tarifs" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+    <section id="tarifs" className="py-32 bg-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20">
+          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6 animate-fade-up">
             Tarifs transparents
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
             Choisissez le plan adapté à{" "}
             <span className="text-gradient">vos besoins</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Des formules flexibles sans engagement. Commencez gratuitement 
-            et évoluez selon vos besoins.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '200ms' }}>
+            Des formules flexibles sans engagement. Commencez gratuitement.
           </p>
         </div>
 
@@ -84,21 +86,23 @@ export const PricingSection = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${
+              className={`relative rounded-3xl p-8 hover-lift animate-fade-up ${
                 plan.highlighted
-                  ? "bg-primary text-primary-foreground shadow-glow scale-105"
-                  : "bg-card border border-border shadow-soft hover:shadow-elevated"
+                  ? "gradient-primary text-primary-foreground shadow-glow scale-105 z-10"
+                  : "bg-card border border-border/50 shadow-soft"
               }`}
+              style={{ animationDelay: `${300 + index * 100}ms` }}
             >
               {plan.highlighted && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="px-4 py-1 rounded-full bg-accent text-accent-foreground text-sm font-semibold">
+                  <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-primary text-sm font-bold shadow-lg">
+                    <Sparkles className="w-4 h-4" />
                     Le plus populaire
                   </span>
                 </div>
               )}
 
-              <div className="mb-6">
+              <div className="mb-8">
                 <h3 className={`text-2xl font-bold mb-2 ${
                   plan.highlighted ? "text-primary-foreground" : "text-foreground"
                 }`}>
@@ -112,10 +116,10 @@ export const PricingSection = () => {
               </div>
 
               <div className="mb-8">
-                <span className={`text-4xl font-bold ${
+                <span className={`text-5xl font-bold ${
                   plan.highlighted ? "text-primary-foreground" : "text-foreground"
                 }`}>
-                  {plan.price === "Sur devis" ? "" : "€"}{plan.price}
+                  €{plan.price}
                 </span>
                 <span className={`text-lg ${
                   plan.highlighted ? "text-primary-foreground/80" : "text-muted-foreground"
@@ -124,15 +128,15 @@ export const PricingSection = () => {
                 </span>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-10">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-3">
-                    <div className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center ${
+                    <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${
                       plan.highlighted 
                         ? "bg-primary-foreground/20" 
                         : "bg-primary/10"
                     }`}>
-                      <Check className={`w-3 h-3 ${
+                      <Check className={`w-4 h-4 ${
                         plan.highlighted ? "text-primary-foreground" : "text-primary"
                       }`} />
                     </div>
@@ -146,11 +150,11 @@ export const PricingSection = () => {
               </ul>
 
               <Button
-                variant={plan.highlighted ? "heroOutline" : "hero"}
-                size="lg"
+                variant={plan.highlighted ? "secondary" : "hero"}
+                size="xl"
                 className={`w-full ${
                   plan.highlighted 
-                    ? "border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" 
+                    ? "bg-white text-primary hover:bg-white/90 shadow-lg" 
                     : ""
                 }`}
               >
@@ -160,7 +164,7 @@ export const PricingSection = () => {
           ))}
         </div>
 
-        <p className="text-center text-muted-foreground text-sm mt-12">
+        <p className="text-center text-muted-foreground text-sm mt-12 animate-fade-up" style={{ animationDelay: '600ms' }}>
           Tous les prix sont HT. Facturation mensuelle ou annuelle (-20%).
         </p>
       </div>

@@ -16,7 +16,7 @@ const testimonials: Testimonial[] = [
     role: "Pharmacienne Titulaire",
     pharmacy: "Pharmacie du Centre",
     location: "Lyon",
-    content: "PilotermaPharma a transformé ma façon de gérer ma pharmacie. Les tableaux de bord sont clairs et me permettent de prendre des décisions éclairées en quelques minutes. J'ai réduit mes stocks dormants de 40% en 6 mois.",
+    content: "PilotermaPharma a transformé ma façon de gérer ma pharmacie. Les tableaux de bord sont clairs et me permettent de prendre des décisions éclairées en quelques minutes.",
     rating: 5,
     avatar: "MD"
   },
@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     role: "Pharmacien Adjoint",
     pharmacy: "Grande Pharmacie de Paris",
     location: "Paris",
-    content: "L'analyse des coûts salariaux est exceptionnelle. On visualise enfin clairement la rentabilité de chaque poste. L'équipe support est également très réactive et à l'écoute.",
+    content: "L'analyse des coûts salariaux est exceptionnelle. On visualise enfin clairement la rentabilité de chaque poste. L'équipe support est très réactive.",
     rating: 5,
     avatar: "PM"
   },
@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
     role: "Pharmacienne Titulaire",
     pharmacy: "Pharmacie des Halles",
     location: "Bordeaux",
-    content: "Après avoir testé plusieurs solutions, PilotermaPharma est de loin la plus intuitive. Mes préparatrices l'ont adoptée en moins d'une semaine. Le gain de temps est considérable.",
+    content: "Après avoir testé plusieurs solutions, PilotermaPharma est de loin la plus intuitive. Mes préparatrices l'ont adoptée en moins d'une semaine.",
     rating: 5,
     avatar: "SL"
   },
@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
     role: "Pharmacien Titulaire",
     pharmacy: "Pharmacie Saint-Michel",
     location: "Toulouse",
-    content: "Les alertes de stock et les prévisions d'achat ont révolutionné notre gestion. Fini les ruptures de stock sur les produits essentiels. Je recommande vivement !",
+    content: "Les alertes de stock et les prévisions d'achat ont révolutionné notre gestion. Fini les ruptures sur les produits essentiels !",
     rating: 5,
     avatar: "JR"
   }
@@ -56,7 +56,7 @@ function StarRating({ rating }: { rating: number }) {
         <Star
           key={i}
           className={`w-4 h-4 ${
-            i < rating ? "fill-accent text-accent" : "text-muted"
+            i < rating ? "fill-yellow-400 text-yellow-400" : "text-muted"
           }`}
         />
       ))}
@@ -64,24 +64,29 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+function TestimonialCard({ testimonial, index }: { testimonial: Testimonial; index: number }) {
   return (
-    <div className="bg-card rounded-2xl p-6 shadow-lg border border-border/50 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-      <div className="flex items-start justify-between mb-4">
-        <Quote className="w-8 h-8 text-primary/30" />
-        <StarRating rating={testimonial.rating} />
+    <div 
+      className="group relative bg-card rounded-3xl p-8 shadow-soft border border-border/50 hover-lift animate-fade-up"
+      style={{ animationDelay: `${300 + index * 100}ms` }}
+    >
+      {/* Quote icon */}
+      <div className="absolute top-6 right-6 w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+        <Quote className="w-6 h-6 text-primary" />
       </div>
       
-      <p className="text-foreground/80 leading-relaxed flex-grow mb-6">
+      <StarRating rating={testimonial.rating} />
+      
+      <p className="text-foreground/80 leading-relaxed mt-6 mb-8 text-lg">
         "{testimonial.content}"
       </p>
       
-      <div className="flex items-center gap-4 pt-4 border-t border-border/50">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-white font-semibold text-sm">
+      <div className="flex items-center gap-4 pt-6 border-t border-border/50">
+        <div className="w-14 h-14 rounded-2xl gradient-primary flex items-center justify-center text-white font-bold text-lg shadow-glow">
           {testimonial.avatar}
         </div>
         <div>
-          <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
+          <h4 className="font-bold text-foreground">{testimonial.name}</h4>
           <p className="text-sm text-muted-foreground">{testimonial.role}</p>
           <p className="text-xs text-muted-foreground">
             {testimonial.pharmacy} • {testimonial.location}
@@ -94,43 +99,46 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
 export function TestimonialsSection() {
   return (
-    <section id="temoignages" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+    <section id="temoignages" className="py-32 bg-muted/30 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-t from-primary/5 to-transparent rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-20">
+          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6 animate-fade-up">
             Témoignages
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: '100ms' }}>
             Ils nous font{" "}
             <span className="text-gradient">confiance</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez ce que les pharmaciens pensent de PilotermaPharma et comment 
-            notre solution a transformé leur quotidien.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '200ms' }}>
+            Découvrez ce que les pharmaciens pensent de PilotermaPharma.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} testimonial={testimonial} />
+            <TestimonialCard key={index} testimonial={testimonial} index={index} />
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-8 bg-card rounded-2xl px-8 py-6 shadow-lg border border-border/50">
+        {/* Stats banner */}
+        <div className="mt-20 animate-fade-up" style={{ animationDelay: '700ms' }}>
+          <div className="inline-flex items-center gap-12 bg-card rounded-3xl px-12 py-8 shadow-elevated border border-border/50 mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient">500+</div>
-              <div className="text-sm text-muted-foreground">Pharmacies équipées</div>
+              <div className="text-4xl font-bold text-gradient">500+</div>
+              <div className="text-sm text-muted-foreground font-medium">Pharmacies équipées</div>
             </div>
-            <div className="w-px h-12 bg-border"></div>
+            <div className="w-px h-16 bg-border"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient">4.9/5</div>
-              <div className="text-sm text-muted-foreground">Note moyenne</div>
+              <div className="text-4xl font-bold text-gradient">4.9/5</div>
+              <div className="text-sm text-muted-foreground font-medium">Note moyenne</div>
             </div>
-            <div className="w-px h-12 bg-border"></div>
+            <div className="w-px h-16 bg-border"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient">98%</div>
-              <div className="text-sm text-muted-foreground">Taux de satisfaction</div>
+              <div className="text-4xl font-bold text-gradient">98%</div>
+              <div className="text-sm text-muted-foreground font-medium">Taux de satisfaction</div>
             </div>
           </div>
         </div>

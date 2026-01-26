@@ -5,7 +5,9 @@ import {
   Wallet, 
   Users, 
   TrendingUp, 
-  Shield 
+  Shield,
+  BadgePercent,
+  Target
 } from "lucide-react";
 
 const features = [
@@ -38,6 +40,16 @@ const features = [
     icon: Shield,
     title: "Sécurité des données",
     description: "Vos données sont cryptées et hébergées en France, conformément aux normes pharmaceutiques."
+  },
+  {
+    icon: BadgePercent,
+    title: "Contrôle des remises",
+    description: "Contrôlez vos remises grossistes et génériques grâce à un outil fiable."
+  },
+  {
+    icon: Target,
+    title: "Objectifs",
+    description: "Atteignez vos objectifs."
   }
 ];
 

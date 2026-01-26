@@ -16,7 +16,7 @@ export function HeroSection() {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: '100ms' }}>
-            Solution tout-en-un pour piloter votre pharmacie avec une{" "}
+            Solution tout-en-un pour <span className="text-gradient font-extrabold">piloter</span> votre pharmacie avec une{" "}
             <span className="text-gradient">clarté totale</span>
           </h1>
           

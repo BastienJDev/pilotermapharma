@@ -32,7 +32,7 @@ const features = [
   {
     icon: Users,
     title: "Gestion du personnel",
-    description: "Suivez les plannings, les heures travaillées et les coûts associés à votre équipe officinale."
+    description: "Suivez les plannings et les coûts associés à votre équipe officinale."
   },
   {
     icon: Shield,

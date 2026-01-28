@@ -17,7 +17,7 @@ const features = [
   {
     icon: Package,
     title: "Suivi des stocks et des remises",
-    description: "Optimisez vos commandes grâce à des alertes intelligentes et évitez les ruptures de stock."
+    description: "Optimisez vos commandes grâce à des alertes intelligentes."
   },
   {
     icon: Wallet,

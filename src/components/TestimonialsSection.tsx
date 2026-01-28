@@ -127,7 +127,7 @@ export function TestimonialsSection() {
         <div className="mt-20 animate-fade-up" style={{ animationDelay: '700ms' }}>
           <div className="inline-flex items-center gap-12 bg-card rounded-3xl px-12 py-8 shadow-elevated border border-border/50 mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-gradient">500+</div>
+              <div className="text-4xl font-bold text-gradient">30</div>
               <div className="text-sm text-muted-foreground font-medium">Pharmacies équipées</div>
             </div>
             <div className="w-px h-16 bg-border"></div>

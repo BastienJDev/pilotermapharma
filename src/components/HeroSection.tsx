@@ -48,7 +48,7 @@ export function HeroSection() {
           {/* Stats row */}
           <div className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '400ms' }}>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">500+</div>
+              <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">30</div>
               <div className="text-sm text-muted-foreground">Pharmacies équipées</div>
             </div>
             <div className="text-center border-x border-border">

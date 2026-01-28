@@ -34,7 +34,7 @@ export function CTASection() {
               Démarrez votre essai gratuit aujourd'hui
             </h2>
             <p className="text-primary-foreground/80 text-xl mb-10 animate-fade-up" style={{ animationDelay: '200ms' }}>
-              Rejoignez les 500+ pharmaciens qui ont déjà optimisé leur quotidien avec PilotermaPharma.
+              Rejoignez les 30 pharmaciens qui ont déjà optimisé leur quotidien avec PilotermaPharma.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '300ms' }}>

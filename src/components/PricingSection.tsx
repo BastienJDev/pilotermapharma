@@ -30,7 +30,7 @@ const plans: PricingPlan[] = [
   {
     name: "Automatisation",
     description: "La solution complète pour optimiser votre officine",
-    price: "60,99",
+    price: "69,99",
     period: "/mois",
     features: [
       "Tout de Essentiel +",

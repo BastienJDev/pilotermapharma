@@ -46,6 +46,11 @@ export function Header() {
           </nav>
           
           <div className="flex items-center gap-3">
+            <a href="/rbaron">
+              <Button variant="ghost" className="hidden md:inline-flex">
+                Connexion
+              </Button>
+            </a>
             <Button variant="hero" size="lg" className="shadow-glow">
               Demander une démo
             </Button>

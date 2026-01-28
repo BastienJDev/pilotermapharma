@@ -22,8 +22,7 @@ const plans: PricingPlan[] = [
       "Suivi des ventes",
       "Gestion des stocks de base",
       "Rapports mensuels",
-      "Support par email",
-      "1 utilisateur"
+      "Support par email"
     ],
     buttonText: "Commencer"
   },
@@ -39,7 +38,6 @@ const plans: PricingPlan[] = [
       "Alertes intelligentes",
       "Rapports personnalisés",
       "Support prioritaire",
-      "5 utilisateurs",
       "Export des données"
     ],
     highlighted: true,

@@ -45,11 +45,7 @@ export function Header() {
             </a>
           </nav>
           
-          {/* Actions */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" className="hidden md:inline-flex">
-              Connexion
-            </Button>
             <Button variant="hero" size="lg" className="shadow-glow">
               Demander une démo
             </Button>

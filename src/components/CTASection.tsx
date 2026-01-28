@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export function CTASection() {
   return (
@@ -44,14 +44,6 @@ export function CTASection() {
               >
                 Essayer gratuitement
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                size="xl" 
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10"
-              >
-                <Play className="w-5 h-5" />
-                Voir la démo
               </Button>
             </div>
             

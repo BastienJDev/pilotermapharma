@@ -5,9 +5,7 @@ import {
   Wallet, 
   Users, 
   TrendingUp, 
-  Shield,
-  BadgePercent,
-  Target
+  Shield
 } from "lucide-react";
 
 const features = [
@@ -35,16 +33,6 @@ const features = [
     icon: Users,
     title: "Gestion du personnel",
     description: "Suivez les plannings et les coûts associés à votre équipe officinale."
-  },
-  {
-    icon: BadgePercent,
-    title: "Contrôle des remises",
-    description: "Contrôlez vos remises grossistes et génériques grâce à un outil fiable."
-  },
-  {
-    icon: Target,
-    title: "Objectifs",
-    description: "Atteignez vos objectifs."
   },
   {
     icon: Shield,

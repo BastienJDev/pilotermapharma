@@ -15,7 +15,7 @@ const plans: PricingPlan[] = [
   {
     name: "Essentiel",
     description: "Pour les pharmacies qui débutent leur transformation digitale",
-    price: "29,99",
+    price: "49,99",
     period: "/mois",
     features: [
       "Tableau de bord principal",
@@ -30,7 +30,7 @@ const plans: PricingPlan[] = [
   {
     name: "Automatisation",
     description: "La solution complète pour optimiser votre officine",
-    price: "59,99",
+    price: "60,99",
     period: "/mois",
     features: [
       "Tout de Essentiel +",

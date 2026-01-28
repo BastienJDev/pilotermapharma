@@ -16,7 +16,7 @@ const features = [
   },
   {
     icon: Package,
-    title: "Suivi des stocks",
+    title: "Suivi des stocks et des remises",
     description: "Optimisez vos commandes grâce à des alertes intelligentes et évitez les ruptures de stock."
   },
   {
@@ -56,7 +56,7 @@ export function FeaturesSection() {
           </h2>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard
               key={feature.title}

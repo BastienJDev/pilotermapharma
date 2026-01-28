@@ -56,7 +56,7 @@ export function CTASection() {
             </div>
             
             <p className="mt-10 text-primary-foreground/60 text-sm animate-fade-up" style={{ animationDelay: '400ms' }}>
-              Configuration en 10 minutes • Support dédié • Annulation à tout moment
+              Support dédié • Annulation à tout moment
             </p>
           </div>
         </div>
